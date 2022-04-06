@@ -121,26 +121,26 @@ class _HomeState extends State<Home> {
         }
         else {
           return Scaffold(
-            body: SingleChildScrollView(
-              child: Container(
-                padding: const EdgeInsets.only(top: 25.0, bottom: 60.0, right: 20.0, left: 20.0),
-                decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/background.png'),
-                      fit: BoxFit.cover,
-                    )
-                ),
+            body: Container(
+              padding: const EdgeInsets.only(top: 25.0, bottom: 60.0, right: 20.0, left: 20.0),
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/background.png'),
+                    fit: BoxFit.cover,
+                  )
+              ),
+              child: SingleChildScrollView(
                 child: Row(
                   children: <Widget>[
                     Expanded(
                       child: Column(
                         children: <Widget>[
                           const SizedBox(height: 60.0),
-                          const Text('8  -  9  -  10  SEPTEMBER  2022', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.bold)),
-                          const SizedBox(height: 100.0),
+                          const Text('8  -  9  -  10  SEPTEMBER  2022', style: TextStyle(color: Colors.black, fontSize: 25.0, fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 200.0),
                           SizedBox(
-                            height: 50.0,
-                            width: 100.0,
+                            height: 100.0,
+                            width: 200.0,
                             child: TextButton(
                               style: ButtonStyle(shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
@@ -154,9 +154,10 @@ class _HomeState extends State<Home> {
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(homeIndex: 1)));
                               },
-                              child: const Text('APPLY NOW !', style: TextStyle(fontSize: 12.5)),
+                              child: const Text('APPLY NOW !', style: TextStyle(fontSize: 20.0)),
                             ),
                           ),
+                          const SizedBox(height: 100.0),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
