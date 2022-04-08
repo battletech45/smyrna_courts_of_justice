@@ -319,6 +319,33 @@ class Courts extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 200.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          const Divider(height: 50.0, thickness: 5, color: Colors.black),
+                          Image.asset('assets/University.png', width: 200.0, height: 100.0),
+                          const Divider(height: 50.0,thickness: 5, color: Colors.black)
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Column(
+                            children: <Widget>[
+                              const Text('Sakarya Caddesi No:156', style: TextStyle(fontWeight: FontWeight.bold)),
+                              const Text('35330 Balçova - İzmir/Türkiye', style: TextStyle(fontWeight: FontWeight.bold)),
+                              Row(
+                                children: const <Widget>[
+                                  Icon(Icons.copyright),
+                                  Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold))
+                                ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 100.0)
+
                     ],
                   ),
                 ),
