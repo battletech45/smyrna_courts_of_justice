@@ -122,7 +122,7 @@ class _HomeState extends State<Home> {
         else {
           return Scaffold(
             body: Container(
-              padding: const EdgeInsets.only(top: 25.0, bottom: 60.0, right: 20.0, left: 20.0),
+              //padding: const EdgeInsets.only(top: 25.0, bottom: 60.0, right: 20.0, left: 20.0),
               decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/background.png'),
@@ -163,7 +163,7 @@ class _HomeState extends State<Home> {
                             children: <Widget>[
                               Row(
                                 children: <Widget>[
-                                  Image.asset('assets/EXECPhotos/Goktug.png', width: 200.0, height: 500.0),
+                                  Image.asset('assets/EXECPhotos/Goktug.png', width: 200.0, height: 800.0),
                                   const SizedBox(width: 5.0),
                                   Expanded(
                                     child: Column(
@@ -184,7 +184,7 @@ class _HomeState extends State<Home> {
                               ),
                               Row(
                                 children: [
-                                  Image.asset('assets/EXECPhotos/Simal.png', width: 200.0, height: 500.0),
+                                  Image.asset('assets/EXECPhotos/Simal.png', width: 200.0, height: 800.0),
                                   const SizedBox(width: 10.0),
                                   Expanded(
                                     child: Column(
@@ -209,10 +209,28 @@ class _HomeState extends State<Home> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   const Divider(height: 50.0, thickness: 5, color: Colors.black),
-                                  Image.asset('assets/University.png', width: 100.0, height: 50.0),
+                                  Image.asset('assets/University.png', width: 200.0, height: 100.0),
                                   const Divider(height: 50.0,thickness: 5, color: Colors.black)
                                 ],
                               ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Column(
+                                    children: <Widget>[
+                                      const Text('Sakarya Caddesi No:156', style: TextStyle(fontWeight: FontWeight.bold)),
+                                      const Text('35330 Balçova - İzmir/Türkiye', style: TextStyle(fontWeight: FontWeight.bold)),
+                                      Row(
+                                        children: const <Widget>[
+                                          Icon(Icons.copyright),
+                                          Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold))
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 100.0)
                             ],
                           ),
                         ],
