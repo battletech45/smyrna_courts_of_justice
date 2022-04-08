@@ -154,7 +154,7 @@ class _ApplyState extends State<Apply> {
                               onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLScceXLWe9dM2TgBISDdZSzKCZfL_5pQaXDjd7W1xUOD2SOBjQ/viewform?usp=sf_link'),
                               child: SizedBox(
                                 width: 200.0,
-                                height: 250.0,
+                                height: 255.0,
                                 child: Column(
                                   children: const <Widget>[
                                     Icon(Icons.camera_alt_outlined),
@@ -214,7 +214,7 @@ class _ApplyState extends State<Apply> {
                               onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLSc0MXYtGCLRsAnlHsU8v2oNoXyMF9956-l-ghVyWsy9iFKwog/viewform?usp=sf_link'),
                               child: SizedBox(
                                 width: 200.0,
-                                height: 250.0,
+                                height: 255.0,
                                 child: Column(
                                   children: const <Widget>[
                                     Icon(Icons.manage_accounts_rounded),
