@@ -167,7 +167,16 @@ class _HomeState extends State<Home> {
                             children: <Widget>[
                               Row(
                                 children: <Widget>[
-                                  Image.asset('assets/EXECPhotos/Goktug.png', width: 200.0, height: 800.0),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: <Widget>[
+                                      Image.asset('assets/EXECPhotos/Goktug.png', width: 200.0, height: 200.0),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Göktuğ Şirin', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Secretary General', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold))
+                                    ],
+                                  ),
                                   const SizedBox(width: 5.0),
                                   Expanded(
                                     child: Column(
@@ -186,9 +195,18 @@ class _HomeState extends State<Home> {
                                   ),
                                 ],
                               ),
+                              const SizedBox(height: 100.0),
                               Row(
-                                children: [
-                                  Image.asset('assets/EXECPhotos/Simal.png', width: 200.0, height: 800.0),
+                                children: <Widget>[
+                                  Column(
+                                    children: <Widget>[
+                                      Image.asset('assets/EXECPhotos/Simal.png', width: 200.0, height: 200.0),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Şimal Hastürkoğlu', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Director General', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold))
+                                    ],
+                                  ),
                                   const SizedBox(width: 10.0),
                                   Expanded(
                                     child: Column(
@@ -209,6 +227,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ],
                               ),
+                              const SizedBox(height: 150.0),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
