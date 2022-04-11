@@ -53,12 +53,24 @@ class _HomeState extends State<Home> {
                               child: const Text('APPLY NOW !', style: TextStyle(fontSize: 25.0)),
                             ),
                           ),
+                          const SizedBox(height: 200.0),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
                               Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Image.asset('assets/EXECPhotos/Goktug.png', width: 400.0, height: 1000.0),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: <Widget>[
+                                      Image.asset('assets/EXECPhotos/Goktug.png', width: 400.0, height: 400.0),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Göktuğ Şirin', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Secretary General', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold))
+
+                                    ],
+                                  ),
                                   const SizedBox(width: 10.0),
                                   Expanded(
                                     child: Column(
@@ -77,9 +89,20 @@ class _HomeState extends State<Home> {
                                   ),
                                 ],
                               ),
+                              const SizedBox(height: 150.0),
                               Row(
-                                children: [
-                                  Image.asset('assets/EXECPhotos/Simal.png', width: 400.0, height: 1000.0),
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: <Widget>[
+                                      Image.asset('assets/EXECPhotos/Simal.png', width: 400.0, height: 400.0),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Şimal Hastürkoğlu', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 10.0),
+                                      const Text('Director General', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold))
+                                    ],
+                                  ),
                                   const SizedBox(width: 10.0),
                                   Expanded(
                                     child: Column(
@@ -100,12 +123,25 @@ class _HomeState extends State<Home> {
                                   ),
                                 ],
                               ),
+                              const SizedBox(height: 200.0),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  const Divider(height: 100.0, thickness: 5, color: Colors.black),
-                                  Image.asset('assets/University.png', width: 200.0, height: 100.0),
-                                  const Divider(height: 100.0,thickness: 5, color: Colors.black)
+                                  Column(
+                                    children: <Widget>[
+                                      Image.asset('assets/SchoolLogoRBG.png', width: 300.0, height: 150.0),
+                                      const Text('Sakarya Caddesi No:156', style: TextStyle(fontWeight: FontWeight.bold)),
+                                      const Text('35330 Balçova - İzmir/Türkiye', style: TextStyle(fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 20.0),
+                                      Row(
+                                        children: const <Widget>[
+                                          Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold)),
+                                          Icon(Icons.copyright),
+                                          Text('2022', style: TextStyle(fontWeight: FontWeight.bold))
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ],
                               ),
                             ],
@@ -163,9 +199,9 @@ class _HomeState extends State<Home> {
                           ),
                           const SizedBox(height: 100.0),
                           Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
                               Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
@@ -197,6 +233,7 @@ class _HomeState extends State<Home> {
                               ),
                               const SizedBox(height: 100.0),
                               Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Column(
                                     children: <Widget>[
