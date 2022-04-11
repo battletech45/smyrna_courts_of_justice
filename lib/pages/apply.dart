@@ -76,7 +76,7 @@ class _ApplyState extends State<Apply> {
                                   Divider(color: Colors.black, thickness: 5),
                                   Text('PARTICIPANT'),
                                   SizedBox(height: 10.0),
-                                  Text('Welcome bag', style: TextStyle(fontWeight: FontWeight.bold)),
+                                  Text('Welcome Bag', style: TextStyle(fontWeight: FontWeight.bold)),
                                   SizedBox(height: 10.0),
                                   Text('(Badges, Messaging Notebook, Secretariat File, Note Papers ,Placard, Pen and Certificate)'),
                                   SizedBox(height: 10.0),
@@ -151,54 +151,25 @@ class _ApplyState extends State<Apply> {
                             color: const Color.fromARGB(255,215,153,40),
                             child: InkWell(
                               splashColor: const Color.fromARGB(255,215,153,40),
-                              onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLScceXLWe9dM2TgBISDdZSzKCZfL_5pQaXDjd7W1xUOD2SOBjQ/viewform?usp=sf_link'),
-                              child: SizedBox(
-                                width: 200.0,
-                                height: 255.0,
-                                child: Column(
-                                  children: const <Widget>[
-                                    Icon(Icons.camera_alt_outlined),
-                                    Divider(color: Colors.black, thickness: 5),
-                                    Text('Press'),
-                                    SizedBox(height: 10.0),
-                                    Text('Welcome Bag', style: TextStyle(fontWeight: FontWeight.bold)),
-                                    SizedBox(height: 10.0),
-                                    Text('(Badges and Certificate)'),
-                                    SizedBox(height: 10.0),
-                                    Text('Lunch for 3 Days', style: TextStyle(fontWeight: FontWeight.bold)),
-                                    SizedBox(height: 10.0),
-                                    Text('Plenty of Snacks and Beverages', style: TextStyle(fontWeight: FontWeight.bold)),
-                                    SizedBox(height: 40.0),
-                                    Divider(color: Colors.black, thickness: 5),
-                                    Text('Price: 125 TL')
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 40.0),
-                          Card(
-                            color: const Color.fromARGB(255,215,153,40),
-                            child: InkWell(
-                              splashColor: const Color.fromARGB(255,215,153,40),
                               onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLScn2zcLg7VfQMmLXJSe93U-51VVmufxdWORbYEpy331uCAPFw/viewform?usp=sf_link'),
                               child: SizedBox(
                                 width: 200.0,
                                 height: 300.0,
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: const <Widget>[
                                     Icon(Icons.person),
                                     Divider(color: Colors.black, thickness: 5),
                                     Text('PARTICIPANT'),
                                     SizedBox(height: 10.0),
-                                    Text('Welcome bag', style: TextStyle(fontWeight: FontWeight.bold)),
+                                    Text('Welcome Bag', style: TextStyle(fontWeight: FontWeight.bold)),
                                     SizedBox(height: 10.0),
-                                    Text('(Badges, Messaging Notebook, Secretariat File, Note Papers ,Placard, Pen and Certificate)'),
+                                    Text('(Badges, Messaging Notebook, Secretariat File, Note Papers ,Placard, Pen and Certificate)', textAlign: TextAlign.center),
                                     SizedBox(height: 10.0),
                                     Text('Lunch for 3 Days', style: TextStyle(fontWeight: FontWeight.bold)),
                                     SizedBox(height: 10.0),
-                                    Text('Plenty of Snacks and Beverages', style: TextStyle(fontWeight: FontWeight.bold)),
-                                    SizedBox(height: 40.0),
+                                    Text('Plenty of Snacks and Beverages', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
+                                    SizedBox(height: 35.0),
                                     Divider(color: Colors.black, thickness: 5),
                                     Text('Price: 200 TL')
                                   ],
@@ -207,6 +178,36 @@ class _ApplyState extends State<Apply> {
                             ),
                           ),
                     const SizedBox(height: 40.0),
+                    Card(
+                      color: const Color.fromARGB(255,215,153,40),
+                      child: InkWell(
+                        splashColor: const Color.fromARGB(255,215,153,40),
+                        onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLScceXLWe9dM2TgBISDdZSzKCZfL_5pQaXDjd7W1xUOD2SOBjQ/viewform?usp=sf_link'),
+                        child: SizedBox(
+                          width: 200.0,
+                          height: 255.0,
+                          child: Column(
+                            children: const <Widget>[
+                              Icon(Icons.camera_alt_outlined),
+                              Divider(color: Colors.black, thickness: 5),
+                              Text('Press'),
+                              SizedBox(height: 10.0),
+                              Text('Welcome Bag', style: TextStyle(fontWeight: FontWeight.bold)),
+                              SizedBox(height: 10.0),
+                              Text('(Badges and Certificate)'),
+                              SizedBox(height: 10.0),
+                              Text('Lunch for 3 Days', style: TextStyle(fontWeight: FontWeight.bold)),
+                              SizedBox(height: 10.0),
+                              Text('Plenty of Snacks and Beverages', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
+                              SizedBox(height: 40.0),
+                              Divider(color: Colors.black, thickness: 5),
+                              Text('Price: 125 TL')
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                          const SizedBox(height: 40.0),
                           Card(
                             color: const Color.fromARGB(255,215,153,40),
                             child: InkWell(
@@ -227,7 +228,7 @@ class _ApplyState extends State<Apply> {
                                     SizedBox(height: 10.0),
                                     Text('Lunch for 3 Days', style: TextStyle(fontWeight: FontWeight.bold)),
                                     SizedBox(height: 10.0),
-                                    Text('Plenty of Snacks and Beverages', style: TextStyle(fontWeight: FontWeight.bold)),
+                                    Text('Plenty of Snacks and Beverages', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
                                     SizedBox(height: 40.0),
                                     Divider(color: Colors.black, thickness: 5),
                                     Text('Price: 125 TL')
@@ -236,26 +237,21 @@ class _ApplyState extends State<Apply> {
                               ),
                             ),
                           ),
-                    const SizedBox(height: 40.0),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        const Divider(height: 50.0, thickness: 5, color: Colors.black),
-                        Image.asset('assets/University.png', width: 200.0, height: 100.0),
-                        const Divider(height: 50.0,thickness: 5, color: Colors.black)
-                      ],
-                    ),
+                    const SizedBox(height: 350.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Column(
                           children: <Widget>[
+                            Image.asset('assets/SchoolLogoRBG.png', width: 300.0, height: 150.0),
                             const Text('Sakarya Caddesi No:156', style: TextStyle(fontWeight: FontWeight.bold)),
                             const Text('35330 Balçova - İzmir/Türkiye', style: TextStyle(fontWeight: FontWeight.bold)),
+                            const SizedBox(height: 20.0),
                             Row(
                               children: const <Widget>[
+                                Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold)),
                                 Icon(Icons.copyright),
-                                Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold))
+                                Text('2022', style: TextStyle(fontWeight: FontWeight.bold))
                               ],
                             )
                           ],

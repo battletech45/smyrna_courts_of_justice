@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
               title: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Image.asset('assets/smyrna-bgRemoved.png', height: 170.0, width: 170.0),
+                  InkWell(child: Image.asset('assets/smyrna-bgRemoved.png', height: 170.0, width: 170.0), onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(homeIndex: 0)))),
                   const Text('SMYRNA COURTS OF JUSTICE', style: TextStyle(color: Colors.black,fontSize: 25.0, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
                   InkWell(child: Image.asset('assets/instagram-logo.png', height: 60.0, width: 60.0), onTap: () => launch('https://instagram.com/smyrnacourtsofjustice?utm_medium=copy_link')),
                 ],
@@ -117,13 +117,19 @@ class _HomePageState extends State<HomePage> {
           return Scaffold(
             appBar: AppBar(
               iconTheme: const IconThemeData(color: Colors.black, size: 15.0),
-              toolbarHeight: 87.5,
+              toolbarHeight: 100.0,
               backgroundColor: Colors.white,
               title: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Image.asset('assets/smyrna-bgRemoved.png', height: 87.0, width: 87.0),
-                  const Text('SMYRNA COURTS OF JUSTICE', style: TextStyle(color: Colors.black,fontSize: 12.5, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+                  InkWell(child: Image.asset('assets/smyrna-bgRemoved.png', height: 87.0, width: 87.0), onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(homeIndex: 0)))),
+                  Column(
+                    children: const <Widget>[
+                      Text('SMYRNA COURTS', style: TextStyle(color: Colors.black,fontSize: 15, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+                      Text('OF JUSTICE', style: TextStyle(color: Colors.black,fontSize: 15, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+
+                    ],
+                  ),
                   InkWell(child: Image.asset('assets/instagram-logo.png', height: 30.0, width: 30.0), onTap: () => launch('https://instagram.com/smyrnacourtsofjustice?utm_medium=copy_link')),
                 ],
               ),

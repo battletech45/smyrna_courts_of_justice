@@ -135,9 +135,13 @@ class _HomeState extends State<Home> {
                     Expanded(
                       child: Column(
                         children: <Widget>[
-                          const SizedBox(height: 60.0),
-                          const Text('8  -  9  -  10  SEPTEMBER  2022', style: TextStyle(color: Colors.black, fontSize: 25.0, fontWeight: FontWeight.bold)),
-                          const SizedBox(height: 200.0),
+                          const SizedBox(height: 100.0),
+                          const Text('8  -  9  -  10', style: TextStyle(color: Colors.black, fontSize: 35.0, fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 20.0),
+                          const Text('SEPTEMBER', style: TextStyle(color: Colors.black, fontSize: 35.0, fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 20.0),
+                          const Text('2022', style: TextStyle(color: Colors.black, fontSize: 35.0, fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 100.0),
                           SizedBox(
                             height: 100.0,
                             width: 200.0,
@@ -148,7 +152,7 @@ class _HomeState extends State<Home> {
                                       side: const BorderSide(color: Color.fromARGB(255,215,153,40))
                                   )
                               ),
-                                backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255,215,153,40),),
+                                backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255,215,153,40)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
                               ),
                               onPressed: () {
@@ -208,29 +212,24 @@ class _HomeState extends State<Home> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  const Divider(height: 50.0, thickness: 5, color: Colors.black),
-                                  Image.asset('assets/University.png', width: 200.0, height: 100.0),
-                                  const Divider(height: 50.0,thickness: 5, color: Colors.black)
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
                                   Column(
                                     children: <Widget>[
+                                      Image.asset('assets/SchoolLogoRBG.png', width: 300.0, height: 150.0),
                                       const Text('Sakarya Caddesi No:156', style: TextStyle(fontWeight: FontWeight.bold)),
                                       const Text('35330 Balçova - İzmir/Türkiye', style: TextStyle(fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 20.0),
                                       Row(
                                         children: const <Widget>[
+                                          Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold)),
                                           Icon(Icons.copyright),
-                                          Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold))
+                                          Text('2022', style: TextStyle(fontWeight: FontWeight.bold))
                                         ],
                                       )
                                     ],
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 100.0)
+                              const SizedBox(height: 200.0)
                             ],
                           ),
                         ],
