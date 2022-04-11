@@ -17,21 +17,21 @@ class _HomeState extends State<Home> {
       builder: (BuildContext context, BoxConstraints constraints) {
         if(constraints.maxWidth > 600) {
           return Scaffold(
-            body: SingleChildScrollView(
-              child: Container(
-                padding: const EdgeInsets.only(top: 25.0, bottom: 60.0, right: 20.0, left: 20.0),
-                decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/background.png'),
-                      fit: BoxFit.cover,
-                    )
-                ),
+            body: Container(
+              padding: const EdgeInsets.only(top: 25.0, bottom: 60.0, right: 20.0, left: 20.0),
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/background.png'),
+                    fit: BoxFit.cover,
+                  )
+              ),
+              child: SingleChildScrollView(
                 child: Row(
                   children: <Widget>[
                     Expanded(
                       child: Column(
                         children: <Widget>[
-                          const SizedBox(height: 60.0),
+                          const SizedBox(height: 100.0),
                           const Text('8  -  9  -  10  SEPTEMBER  2022', style: TextStyle(color: Colors.black, fontSize: 40.0, fontWeight: FontWeight.bold)),
                           const SizedBox(height: 100.0),
                           SizedBox(
@@ -123,7 +123,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 200.0),
+                              const SizedBox(height: 250.0),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
@@ -144,6 +144,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ],
                               ),
+                              const SizedBox(height: 200.0)
                             ],
                           ),
                         ],

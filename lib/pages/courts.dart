@@ -9,19 +9,19 @@ class Courts extends StatelessWidget {
         builder: (BuildContext context, BoxConstraints constraints) {
           if(constraints.maxWidth > 600) {
             return Scaffold(
-              body: SingleChildScrollView(
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/background.png'),
-                        fit: BoxFit.cover,
-                      )
-                  ),
+              body: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/background.png'),
+                      fit: BoxFit.cover,
+                    )
+                ),
+                child: SingleChildScrollView(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      const SizedBox(height: 30.0),
+                      const SizedBox(height: 50.0),
                       Row(
                         children: [
                           Column(
@@ -44,7 +44,7 @@ class Courts extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(height: 50.0),
+                      const SizedBox(height: 100.0),
                       Row(
                         children: [
                           Column(
@@ -65,7 +65,7 @@ class Courts extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 50.0),
+                      const SizedBox(height: 100.0),
                       Row(
                         children: [
                           Column(
@@ -88,7 +88,7 @@ class Courts extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 50.0),
+                      const SizedBox(height: 100.0),
                       Row(
                         children: [
                           Column(
@@ -111,7 +111,7 @@ class Courts extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 50.0),
+                      const SizedBox(height: 100.0),
                       Row(
                         children: [
                           Column(
@@ -135,7 +135,7 @@ class Courts extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 50.0),
+                      const SizedBox(height: 100.0),
                       Row(
                         children: [
                           Column(
@@ -153,13 +153,33 @@ class Courts extends StatelessWidget {
                                 Text('   In this court model, it is aimed to conduct a moral and therefore legal discussion on the dimensions and definition of the right to life, right to abortion, the connection between abortion and the women\'s body, by examining the case of "Roe v. Wade".', style: TextStyle(color: Colors.black, fontSize: 15.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold)),
                                 SizedBox(height: 20.0),
                                 Text('   “Pro-Life v. Pro-Choice; Do you deserve to live?”', style: TextStyle(color: Colors.black, fontSize: 15.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold)),
-
                               ],
                             ),
                           ),
                         ],
                       ),
                       const SizedBox(height: 200.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Column(
+                            children: <Widget>[
+                              Image.asset('assets/SchoolLogoRBG.png', width: 300.0, height: 150.0),
+                              const Text('Sakarya Caddesi No:156', style: TextStyle(fontWeight: FontWeight.bold)),
+                              const Text('35330 Balçova - İzmir/Türkiye', style: TextStyle(fontWeight: FontWeight.bold)),
+                              const SizedBox(height: 20.0),
+                              Row(
+                                children: const <Widget>[
+                                  Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold)),
+                                  Icon(Icons.copyright),
+                                  Text('2022', style: TextStyle(fontWeight: FontWeight.bold))
+                                ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 200.0)
                     ],
                   ),
                 ),

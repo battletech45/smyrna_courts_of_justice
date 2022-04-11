@@ -84,7 +84,8 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                   ), ListTile(
-                    title: const Text('Apply'),
+                    tileColor: const Color.fromARGB(255,215,153,40),
+                    title: const Text('APPLY !'),
                     onTap: () {
                       setState(() {
                         widget.homeIndex = 1;

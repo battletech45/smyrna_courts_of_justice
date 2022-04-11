@@ -23,14 +23,15 @@ class _ApplyState extends State<Apply> {
                     fit: BoxFit.cover,
                   )
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  const SizedBox(height: 50.0),
-                  const Text('Our most esteemed participants,', style: TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic, fontSize: 20.0)),
-                  const Text('Please select your type of application', style: TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic, fontSize: 20.0)),
-                  Expanded(
-                    child: Row(
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    const SizedBox(height: 50.0),
+                    const Text('Our most esteemed participants,', style: TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic, fontSize: 20.0)),
+                    const Text('Please select your type of application', style: TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic, fontSize: 20.0)),
+                    const SizedBox(height: 100.0),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Card(
@@ -78,7 +79,7 @@ class _ApplyState extends State<Apply> {
                                   SizedBox(height: 10.0),
                                   Text('Welcome Bag', style: TextStyle(fontWeight: FontWeight.bold)),
                                   SizedBox(height: 10.0),
-                                  Text('(Badges, Messaging Notebook, Secretariat File, Note Papers ,Placard, Pen and Certificate)'),
+                                  Text('(Badges, Messaging Notebook, Secretariat File, Note Papers ,Placard, Pen and Certificate)', textAlign: TextAlign.center),
                                   SizedBox(height: 10.0),
                                   Text('Lunch for 3 Days', style: TextStyle(fontWeight: FontWeight.bold)),
                                   SizedBox(height: 10.0),
@@ -122,8 +123,30 @@ class _ApplyState extends State<Apply> {
                         ),
                       ],
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 200.0),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Column(
+                          children: <Widget>[
+                            Image.asset('assets/SchoolLogoRBG.png', width: 300.0, height: 150.0),
+                            const Text('Sakarya Caddesi No:156', style: TextStyle(fontWeight: FontWeight.bold)),
+                            const Text('35330 Balçova - İzmir/Türkiye', style: TextStyle(fontWeight: FontWeight.bold)),
+                            const SizedBox(height: 20.0),
+                            Row(
+                              children: const <Widget>[
+                                Text('Smyrna Courts of Justice', style: TextStyle(fontWeight: FontWeight.bold)),
+                                Icon(Icons.copyright),
+                                Text('2022', style: TextStyle(fontWeight: FontWeight.bold))
+                              ],
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 200.0)
+                  ],
+                ),
               ),
             ),
           );
@@ -258,8 +281,7 @@ class _ApplyState extends State<Apply> {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 100.0)
-
+                    const SizedBox(height: 200.0)
                   ],
                 ),
               ),
