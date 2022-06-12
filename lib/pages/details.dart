@@ -37,7 +37,7 @@ class Details extends StatelessWidget {
                           Text("Only law, international relations and political science students can apply to our conference.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                         ],
                       ),
-                      const SizedBox(height: 60.0),
+                      const SizedBox(height: 80.0),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const <Widget>[
@@ -46,7 +46,7 @@ class Details extends StatelessWidget {
                           Text("Our conference will be held in İzmir University of Economics.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                         ],
                       ),
-                      const SizedBox(height: 60.0),
+                      const SizedBox(height: 80.0),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const <Widget>[
@@ -55,7 +55,7 @@ class Details extends StatelessWidget {
                           Text("Our conference will be held in 8-9-10 September 2022.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                         ],
                       ),
-                      const SizedBox(height: 60.0),
+                      const SizedBox(height: 80.0),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const <Widget>[
@@ -63,7 +63,7 @@ class Details extends StatelessWidget {
                           SizedBox(height: 40.0),
                           Text("Our fees for participant which includes positions of judges, prosecutors and advoces is 200 Turkish Liras and for administrative staff and press membership is 125 Turkish Liras.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                         ],
-                      ),const SizedBox(height: 60.0),
+                      ),const SizedBox(height: 80.0),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const <Widget>[
@@ -72,7 +72,7 @@ class Details extends StatelessWidget {
                           Text("Our guests will stay in the Dormitory of Izmir University of Economics for 150 Turkish Liras per night as the pares of two since the dormitory has no plan for otherwise.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                         ],
                       ),
-                      const SizedBox(height: 60.0),
+                      const SizedBox(height: 80.0),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const <Widget>[
@@ -140,7 +140,7 @@ class Details extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const <Widget>[
-                        Text("Who can attend the conference ?", style: TextStyle(fontSize: 17.0, color: Colors.black, fontWeight: FontWeight.bold)),
+                        Text("Who can attend the conference ?", style: TextStyle(fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.bold)),
                         SizedBox(height: 40.0),
                         Text("Only law, international relations and political science students can apply to our conference.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                       ],
@@ -149,7 +149,7 @@ class Details extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const <Widget>[
-                        Text("Where is the conference going to be held ?", style: TextStyle(fontSize: 17.0, color: Colors.black, fontWeight: FontWeight.bold)),
+                        Text("Where is the conference going to be held ?", style: TextStyle(fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.bold)),
                         SizedBox(height: 40.0),
                         Text("Our conference will be held in İzmir University of Economics.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                       ],
@@ -158,7 +158,7 @@ class Details extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const <Widget>[
-                        Text("When is the conference going to be held ?", style: TextStyle(fontSize: 17.0, color: Colors.black, fontWeight: FontWeight.bold)),
+                        Text("When is the conference going to be held ?", style: TextStyle(fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.bold)),
                         SizedBox(height: 40.0),
                         Text("Our conference will be held in 8-9-10 September 2022.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                       ],
@@ -167,7 +167,7 @@ class Details extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const <Widget>[
-                        Text("What is the fee for attending the conference ?", style: TextStyle(fontSize: 17.0, color: Colors.black, fontWeight: FontWeight.bold)),
+                        Text("What is the fee for attending the conference ?", style: TextStyle(fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.bold)),
                         SizedBox(height: 40.0),
                         Text("Our fees for participant which includes positions of judges, prosecutors and advoces is 200 Turkish Liras and for administrative staff and press membership is 125 Turkish Liras.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                       ],
@@ -176,7 +176,7 @@ class Details extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const <Widget>[
-                        Text("Where do the guests of the conference accommodate ?", style: TextStyle(fontSize: 17.0, color: Colors.black, fontWeight: FontWeight.bold)),
+                        Text("Where do the guests of the conference accommodate ?", style: TextStyle(fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.bold)),
                         SizedBox(height: 40.0),
                         Text("Our guests will stay in the Dormitory of Izmir University of Economics for 150 Turkish Liras per night as the pares of two since the dormitory has no plan for otherwise.", style: TextStyle(fontSize: 15.0, color: Colors.black, fontWeight: FontWeight.bold))
                       ],
@@ -185,7 +185,7 @@ class Details extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const <Widget>[
-                        Text("How can we reach the venue of the conference ?", style: TextStyle(fontSize: 17.0, color: Colors.black, fontWeight: FontWeight.bold)),
+                        Text("How can we reach the venue of the conference ?", style: TextStyle(fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.bold)),
                         SizedBox(height: 40.0),
                         Text("        a) From Adnan Menderes Airport:", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
                         SizedBox(height: 10.0),
