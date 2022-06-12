@@ -2,6 +2,7 @@ import 'pages/apply.dart';
 import 'pages/home.dart';
 import 'pages/documents.dart';
 import 'pages/courts.dart';
+import 'pages/Details.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
@@ -44,7 +45,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  List<Widget> bodyWidgets = const [Home(), Apply(), Courts(), Document()];
+  List<Widget> bodyWidgets = const [Home(), Apply(), Courts(), Details()];
 
   void _changeState() {
     HomePage.index = widget.homeIndex;
