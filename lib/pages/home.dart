@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
         if(constraints.maxWidth > 600) {
           return Scaffold(
             body: Container(
-              padding: const EdgeInsets.only(top: 25.0, bottom: 60.0, right: 20.0, left: 20.0),
+              padding: const EdgeInsets.only(right: 20.0, left: 20.0),
               decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/background.png'),
@@ -31,9 +31,9 @@ class _HomeState extends State<Home> {
                     Expanded(
                       child: Column(
                         children: <Widget>[
-                          const SizedBox(height: 100.0),
+                          const SizedBox(height: 40.0),
                           const Text('8  -  9  -  10  SEPTEMBER  2022', style: TextStyle(color: Colors.black, fontSize: 40.0, fontWeight: FontWeight.bold)),
-                          const SizedBox(height: 100.0),
+                          const SizedBox(height: 40.0),
                           SizedBox(
                             height: 100.0,
                             width: 200.0,
@@ -53,7 +53,21 @@ class _HomeState extends State<Home> {
                               child: const Text('APPLY NOW !', style: TextStyle(fontSize: 25.0)),
                             ),
                           ),
-                          const SizedBox(height: 200.0),
+                          const SizedBox(height: 40.0),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: <Widget>[
+                                  Image.asset('assets/platform.png', width: 100.0, height: 100.0),
+                                  Image.asset('assets/smyrna-bgRemoved.png', width: 90.0, height: 90.0),
+                                ],
+                              ),
+                              Image.asset('assets/SchoolLogoRBG.png', width: 300.0, height: 100.0)
+                            ],
+                          ),
+                          const SizedBox(height: 250.0),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
@@ -172,13 +186,13 @@ class _HomeState extends State<Home> {
                     Expanded(
                       child: Column(
                         children: <Widget>[
-                          const SizedBox(height: 100.0),
+                          const SizedBox(height: 30.0),
                           const Text('8  -  9  -  10', style: TextStyle(color: Colors.black, fontSize: 35.0, fontWeight: FontWeight.bold)),
-                          const SizedBox(height: 20.0),
+                          const SizedBox(height: 10.0),
                           const Text('SEPTEMBER', style: TextStyle(color: Colors.black, fontSize: 35.0, fontWeight: FontWeight.bold)),
-                          const SizedBox(height: 20.0),
+                          const SizedBox(height: 10.0),
                           const Text('2022', style: TextStyle(color: Colors.black, fontSize: 35.0, fontWeight: FontWeight.bold)),
-                          const SizedBox(height: 100.0),
+                          const SizedBox(height: 45.0),
                           SizedBox(
                             height: 100.0,
                             width: 200.0,
@@ -198,7 +212,21 @@ class _HomeState extends State<Home> {
                               child: const Text('APPLY NOW !', style: TextStyle(fontSize: 20.0)),
                             ),
                           ),
-                          const SizedBox(height: 100.0),
+                          const SizedBox(height: 35.0),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: <Widget>[
+                                  Image.asset('assets/platform.png', width: 110.0, height: 110.0),
+                                  Image.asset('assets/smyrna-bgRemoved.png', width: 100.0, height: 100.0),
+                                ],
+                              ),
+                              Image.asset('assets/SchoolLogoRBG.png', width: 300.0, height: 90.0)
+                            ],
+                          ),
+                          const SizedBox(height: 300.0),
                           Column(
                             children: <Widget>[
                               Row(
