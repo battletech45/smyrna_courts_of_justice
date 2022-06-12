@@ -1,32 +1,32 @@
 {
-    "name": "smyrna_courts_of_justice",
-    "short_name": "smyrna_courts_of_justice",
+    "name": "Smyrna Courts of Justice",
+    "short_name": "Smyrna Courts of Justice",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Will be held on 8-9-10 September 2022 Smyrna Courts of Justice is a moot court conference that teaches us; faculty of law, international relations and political science students about courts, interpretations of law, advocating ideas and debate in a court of law structure. This conference will handle various legal cases and will show you boths sides of decision making and case building. In Smyrna Courts of Justice you will have unique experience about law, debate, judgment and fun.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "icons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-512.png",
+            "src": "icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-maskable-192.png",
+            "src": "icons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "icons/Icon-maskable-512.png",
+            "src": "icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
