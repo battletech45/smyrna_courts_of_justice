@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                   ),ListTile(
-                    title: const Text('Details'),
+                    title: const Text('F.A.Q.'),
                     onTap: () {
                       setState(() {
                         widget.homeIndex = 3;
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                   ),ListTile(
-                    title: const Text('Details'),
+                    title: const Text('F.A.Q.'),
                     onTap: () {
                       setState(() {
                         widget.homeIndex = 3;
