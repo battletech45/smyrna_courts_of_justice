@@ -86,7 +86,7 @@ class _ApplyState extends State<Apply> {
                                   Text('Plenty of Snacks and Beverages', style: TextStyle(fontWeight: FontWeight.bold)),
                                   SizedBox(height: 5.0),
                                   Divider(color: Colors.black, thickness: 5),
-                                  Text('Price: 200 TL')
+                                  Text('Price: 230 TL')
                                 ],
                               ),
                             ),
@@ -194,7 +194,7 @@ class _ApplyState extends State<Apply> {
                                     Text('Plenty of Snacks and Beverages', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
                                     SizedBox(height: 35.0),
                                     Divider(color: Colors.black, thickness: 5),
-                                    Text('Price: 200 TL')
+                                    Text('Price: 230 TL')
                                   ],
                                 ),
                               ),
