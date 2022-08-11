@@ -48,6 +48,7 @@ dev_dependencies:
   url_launcher: ^6.0.20
   flutter_countdown_timer: ^4.1.0
   intl: ^0.17.0
+  pdfx: ^2.2.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -66,6 +67,7 @@ flutter:
     - assets/
     - assets/courtLogos/
     - assets/EXECPhotos/
+    - assets/pdfFiles/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
