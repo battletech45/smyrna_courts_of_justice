@@ -67,7 +67,7 @@ class _ApplyState extends State<Apply> {
                           color: const Color.fromARGB(255,215,153,40),
                           child: InkWell(
                             splashColor: const Color.fromARGB(255,215,153,40),
-                            onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLScn2zcLg7VfQMmLXJSe93U-51VVmufxdWORbYEpy331uCAPFw/viewform?usp=sf_link'),
+                            onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLSczBwwl6x_jJG3eZ65K9Jfx8HSxsW0uzUNl0H1zyCo9w4Z-Hg/viewform'),
                             child: SizedBox(
                               width: 200.0,
                               height: 250.0,
@@ -174,7 +174,7 @@ class _ApplyState extends State<Apply> {
                             color: const Color.fromARGB(255,215,153,40),
                             child: InkWell(
                               splashColor: const Color.fromARGB(255,215,153,40),
-                              onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLScn2zcLg7VfQMmLXJSe93U-51VVmufxdWORbYEpy331uCAPFw/viewform?usp=sf_link'),
+                              onTap: () => launch('https://docs.google.com/forms/d/e/1FAIpQLSczBwwl6x_jJG3eZ65K9Jfx8HSxsW0uzUNl0H1zyCo9w4Z-Hg/viewform'),
                               child: SizedBox(
                                 width: 200.0,
                                 height: 300.0,
