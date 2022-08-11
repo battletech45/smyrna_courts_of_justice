@@ -45,7 +45,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  List<Widget> bodyWidgets = const [Home(), Apply(), Courts(), Details()];
+  List<Widget> bodyWidgets =  const [Home(), Apply(), Courts(), Document(), Details()];
 
   void _changeState() {
     HomePage.index = widget.homeIndex;
@@ -102,10 +102,18 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                   ),ListTile(
-                    title: const Text('F.A.Q.'),
+                    title: const Text('Documents'),
                     onTap: () {
                       setState(() {
                         widget.homeIndex = 3;
+                        Navigator.pop(context);
+                      });
+                    },
+                  ),ListTile(
+                    title: const Text('F.A.Q.'),
+                    onTap: () {
+                      setState(() {
+                        widget.homeIndex = 4;
                         Navigator.pop(context);
                       });
                     },
@@ -167,10 +175,18 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                   ),ListTile(
-                    title: const Text('F.A.Q.'),
+                    title: const Text('Documents'),
                     onTap: () {
                       setState(() {
                         widget.homeIndex = 3;
+                        Navigator.pop(context);
+                      });
+                    },
+                  ),ListTile(
+                    title: const Text('F.A.Q.'),
+                    onTap: () {
+                      setState(() {
+                        widget.homeIndex = 4;
                         Navigator.pop(context);
                       });
                     },
