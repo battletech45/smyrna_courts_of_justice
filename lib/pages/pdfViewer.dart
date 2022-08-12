@@ -13,7 +13,7 @@ class PdfViewer extends StatefulWidget {
 
 class _PdfViewerState extends State<PdfViewer> {
 
-  static List pdfList = ['assets/pdfFiles/SCJUsulKanunu.pdf', 'assets/pdfFiles/SayıştayDavaDosyası.pdf', 'assets/pdfFiles/PerinçekVSswitzerland.pdf', 'assets/pdfFiles/SCJRoevWade.pdf', 'assets/pdfFiles/SCJYargıtay1.CezaDairesiStudyGuide.pdf', 'assets/pdfFies/StudyGuide.pdf', 'assets/pdfFiles/USSImpeachmentHearingsStudyGuide.pdf'];
+  static List pdfList = ['assets/pdfFiles/SCJUsulKanunu.pdf', 'assets/pdfFiles/SayıştayDavaDosyası.pdf', 'assets/pdfFiles/PerinçekVSswitzerland.pdf', 'assets/pdfFiles/SCJRoevWade.pdf', 'assets/pdfFiles/SCJYargıtay1.CezaDairesiStudyGuide.pdf', 'assets/pdfFiles/StudyGuide.pdf', 'assets/pdfFiles/USSImpeachmentHearingsStudyGuide.pdf', 'assets/pdfFiles/SCJROP.pdf'];
   PdfControllerPinch pdfSelector() {
     return PdfControllerPinch(
       document: PdfDocument.openAsset(pdfList[PdfViewer.index]),
@@ -28,32 +28,37 @@ class _PdfViewerState extends State<PdfViewer> {
   Widget build(BuildContext context) {
     changeState();
     final pdfController = pdfSelector();
-    return LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-          if(constraints.maxWidth > 600) {
-            return Container(
-              padding: const EdgeInsets.only(left: 300.0, right: 300.0, top: 10.0),
-              child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Expanded(
-                            child: PdfViewPinch(
-                              builders: PdfViewPinchBuilders<DefaultBuilderOptions>(
-                                options: const DefaultBuilderOptions(),
-                                documentLoaderBuilder: (_) => const Center(child: CircularProgressIndicator()),
-                                errorBuilder: (_, error) => Center(child: Text(error.toString())),
-                              ),
-                              controller: pdfController,
-                            )
-                      ),
-                    ],
-                  )
-            );
-          }
-          else {
-            return const Center();
-          }
-        },
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255,215,153,40),
+      ),
+      body: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            if(constraints.maxWidth > 600) {
+              return Container(
+                padding: const EdgeInsets.only(left: 300.0, right: 300.0, top: 10.0),
+                child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Expanded(
+                              child: PdfViewPinch(
+                                builders: PdfViewPinchBuilders<DefaultBuilderOptions>(
+                                  options: const DefaultBuilderOptions(),
+                                  documentLoaderBuilder: (_) => const Center(child: CircularProgressIndicator()),
+                                  errorBuilder: (_, error) => Center(child: Text(error.toString())),
+                                ),
+                                controller: pdfController,
+                              )
+                        ),
+                      ],
+                    )
+              );
+            }
+            else {
+              return const Center();
+            }
+          },
+      ),
     );
   }
 }
