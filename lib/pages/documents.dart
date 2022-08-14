@@ -172,7 +172,7 @@ class Document extends StatelessWidget {
             return Scaffold(
               body: Container(
                 width: constraints.maxWidth,
-                padding: const EdgeInsets.symmetric(horizontal: 100.0),
+                padding: const EdgeInsets.symmetric(horizontal: 50.0),
                 decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('assets/background.png'),
