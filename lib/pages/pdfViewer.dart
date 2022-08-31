@@ -32,11 +32,8 @@ class _PdfViewerState extends State<PdfViewer> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255,215,153,40),
       ),
-      body: LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints constraints) {
-            if(constraints.maxWidth > 600) {
-              return Container(
-                padding: const EdgeInsets.only(left: 300.0, right: 300.0, top: 10.0),
+      body: Container(
+                padding: const EdgeInsets.only(top: 10.0),
                 child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -52,13 +49,7 @@ class _PdfViewerState extends State<PdfViewer> {
                         ),
                       ],
                     )
-              );
-            }
-            else {
-              return const Center();
-            }
-          },
-      ),
+              ),
     );
   }
 }
